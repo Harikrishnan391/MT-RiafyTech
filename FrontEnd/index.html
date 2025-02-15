@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Book an Appointment</h2>
+
+      <!-- Appointment Form -->
+      <form id="appointmentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" required />
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" required />
+
+        <label for="time">Available Time Slots:</label>
+        <select id="time" required>
+          <option value="">Select a time</option>
+        </select>
+
+        <button type="submit">Book Appointment</button>
+      </form>
+
+      <!-- Success Message -->
+      <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
